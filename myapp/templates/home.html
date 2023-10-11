@@ -1,0 +1,29 @@
+{% extends "base.html" %} {% block title %}Home Page {% endblock %}
+{% block content %}
+<p>This is Homepage</p>
+<p>Basics steps</p>
+<pre>
+    pip install django
+    django-admin startproject demo
+    cd demo
+    python manage.py startapp myapp
+</pre>    
+    Edit demo/settings.py and add myapp, myapp/templates folder
+<pre>
+    python manage.py runserver
+</pre>   
+    Edit myapp/models.py 
+<pre>
+    python manage.py makemigrations
+    python manage.py migrate
+    
+    python manage.py createsuperuser
+    
+    username admin/password
+    
+    python manage.py runserver 
+    web browser open 
+    http://127.0.0.1:8000/todos/
+    http://127.0.0.1:8000/admin
+</pre>
+{% endblock %}
